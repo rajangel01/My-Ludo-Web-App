@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: rgb(115, 103, 72);
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    background: linear-gradient(120deg,rgb(212, 255, 0),rgb(194, 50, 50));
+    
+    margin: auto;
+}
+
+.dice-field{
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(200deg,rgb(231, 58, 11),rgb(208, 255, 0));
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between; */
+    margin: auto;
+    position: relative;
+    
+}
+
+.page-field{
+    width: 100%;
+    height: 70vh;
+    background: rgb(255, 255, 255);
+    /* display: block; */
+    padding: 20px;
+    border-radius: 40px;
+}
+.green{
+    height: 100%;
+    width: 50%;
+    background: green;
+    /* padding: 10px; */
+    border-radius: 20px;
+    display: flex;
+}
+
+.yellow{
+    height: 100%;
+    width: 50%;
+    background: yellow;
+    /* padding: 10px; */
+    border-radius: 20px;
+    display: flex;
+}
+
+.blue{
+    height: 100%;
+    width: 50%;
+    background: blue;
+    /* padding: 10px; */
+    border-radius: 20px;
+    display: flex;
+}
+
+.red{
+    height: 100%;
+    width: 50%;
+    background: red;
+    /* padding: 10px; */
+    border-radius: 20px;
+    display: flex;
+}
+
+.user{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    /* align-items: center;
+    margin: auto;
+    justify-content: center; */
+    border: 3px solid black;
+}
+
+.user i{
+    font-size: 80px;
+    margin-top: 5px;
+}
+
+.dice{
+    width: 50%;
+    height: 100%;
+    background: white;
+}
+
+.red .user i{
+    color: red;
+}
+
+.green .user i{
+    color: rgb(21, 238, 21);
+}
+
+.yellow .user i{
+    color: yellow;
+}
+
+.blue .user i{
+    color: blue;
+}
+
+.dice{
+    border: 3px solid black;
+    font-size: 80px;
+    padding-left: 15px;
+    padding-top: 4px;
+}
+
+.dice i{
+    font-size: 90px;
+    background-color: white;
+    background: white;
+    
+}
+
+.green-yellow{
+    height: 33%;
+    width: 100%;
+    background:white;
+    display: flex;
+}
+
+.green-yellow-field{
+    height: 34%;
+    width: 100%;
+    background: white;
+    display: flex;
+}
+
+.red-blue{
+    height: 33%;
+    width: 100%;
+    background: white;
+    display: flex;
+}

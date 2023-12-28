@@ -1,0 +1,57 @@
+.gotideco i{
+    color: red;
+    background: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 30px;
+    border-radius: 50%;
+    
+}
+
+.blueGoti4Field i{
+    color: blue;
+}
+
+.blueGoti3Field i{
+    color: blue;
+}
+
+.blueGoti2Field i{
+    color: blue;
+}
+
+.blueGoti1Field i{
+    color: blue;
+}
+
+.yellowGoti4Field i{
+    color: rgb(247, 162, 15);
+}
+
+.yellowGoti3Field i{
+    color: rgb(247, 162, 15);
+}
+
+.yellowGoti2Field i{
+    color: rgb(247, 162, 15);
+}
+
+.yellowGoti1Field i{
+    color: rgb(247, 162, 15);
+}
+
+.greenGoti4Field i{
+    color: rgb(8, 173, 27);
+}
+
+.greenGoti3Field i{
+    color: rgb(8, 173, 27);
+}
+
+.greenGoti2Field i{
+    color: rgb(8, 173, 27);
+}
+
+.greenGoti1Field i{
+    color: rgb(8, 173, 27);
+}

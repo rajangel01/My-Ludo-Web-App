@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ludo Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page-field.css">
+    <link rel="stylesheet" href="gotiDecoration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="main">
+        <div class="dice-field">
+            <div class="green">
+                <div class="user"><i class="fa-solid fa-user"></i></div>
+                <div class="dice" id="greenDice" onclick="generateDiceValueForGreen()"><i class="fa-solid fa-dice-one"></i></div>
+            </div>
+            <div class="yellow">
+                <div class="dice" id="yellowDice" onclick="generateDiceValueForYellow()"><i class="fa-solid fa-dice-one"></i></div>
+                <div class="user"><i class="fa-solid fa-user"></i></div>
+                
+            </div>
+        </div> 
+
+        <div class="page-field">
+            <div class="green-yellow">
+                <div class="green-home">
+                    <div class="top">
+                        <div class="greenGoti1Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="greenGoti2Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="greenGoti3Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="greenGoti4Field gotideco">
+                            <i class="fa-solid fa-street-view"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space">
+                    <div class="ten area-of-goti">
+                        <div class="real-ten unit" id="g10">g10</div>
+                        <div class="eleven unit" id="g11"> g11</div>
+                        <div class="twelve unit" id="g12" >g12</div>
+                    </div>
+                    <div class="nine area-of-goti">
+                        <div class="real-nine unit">g9</div>
+                        <div class="zero unit"></div>
+                        <div class="zero unit stop">y0<i class="fa-regular fa-star"></i></div>
+                    </div>
+                    <div class="eight area-of-goti">
+                        <div class="real-eight unit stop">g8<i class="fa-regular fa-star"></i></div>
+                        <div class="eleven unit"></div>
+                        <div class="one unit">y1</div>
+                    </div>
+                    <div class="seven area-of-goti">
+                        <div class="real-ten unit">g7</div>
+                        <div class="eleven unit"></div>
+                        <div class="twelve unit">y2</div>
+                    </div>
+                    <div class="six area-of-goti">
+                        <div class="real-ten unit"></div>
+                        <div class="eleven unit"></div>
+                        <div class="twelve unit"></div>
+                    </div>
+                    <div class="five area-of-goti">
+                        <div class="real-ten unit"></div>
+                        <div class="eleven unit"></div>
+                        <div class="twelve unit"></div>
+                    </div>
+                </div>
+                <div class="yellow-home">
+                    <div class="top">
+                        <div class="yellowGoti1Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="yellowGoti2Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="yellowGoti3Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="yellowGoti4Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="green-yellow-field">
+                <div class="space space2">
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1 stop"><i class="fa-regular fa-star"></i></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1 stop"><i class="fa-regular fa-star"></i></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                </div>
+                <div class="pass">
+
+                </div>
+                <div class="space space2">
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1 stop"><i class="fa-regular fa-star"></i></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1 stop"><i class="fa-regular fa-star"></i></div>
+                    </div>
+                    <div class="area-of-goti1">
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                        <div class="unit1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="red-blue">
+                <div class="blue-home">
+                    <div class="top">
+                        <div class="blueGoti1Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="blueGoti2Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="blueGoti3Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="blueGoti4Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="space">
+                    <div class="ten area-of-goti">
+                        <div class="real-ten unit"></div>
+                        <div class="eleven unit"></div>
+                        <div class="twelve unit"></div>
+                    </div>
+                    <div class="nine area-of-goti">
+                        <div class="real-nine unit"></div>
+                        <div class="zero unit"></div>
+                        <div class="zero unit"></div>
+                    </div>
+                    <div class="eight area-of-goti">
+                        <div class="real-eight unit"></div>
+                        <div class="eleven unit"></div>
+                        <div class="one unit"></div>
+                    </div>
+                    <div class="seven area-of-goti">
+                        <div class="real-ten unit"></div>
+                        <div class="eleven unit"></div>
+                        <div class="twelve unit stop"><i class="fa-regular fa-star"></i></div>
+                    </div>
+                    <div class="six area-of-goti">
+                        <div class="real-ten unit stop"><i class="fa-regular fa-star"></i></div>
+                        <div class="eleven unit"></div>
+                        <div class="twelve unit"></div>
+                    </div>
+                    <div class="five area-of-goti">
+                        <div class="real-ten unit"></div>
+                        <div class="eleven unit"></div>
+                        <div class="twelve unit"></div>
+                    </div>
+                </div>
+                <div class="red-home">
+                    <div class="top">
+                        <div class="redGoti1Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="redGoti2Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="redGoti3Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="redGoti4Field gotideco">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dice-field">
+            <div class="blue">
+                <div class="user"><i class="fa-solid fa-user"></i></div>
+                <div class="dice" id="blueDice" onclick="generateDiceValueForBlue()"><i class="fa-solid fa-dice-one"></i></div>
+            </div>
+            <div class="red">
+                <div class="dice" id="redDice" onclick="generateDiceValueForRed()"><i class="fa-solid fa-dice-one"></i></div>
+                <div class="user"><i class="fa-solid fa-user"></i></div>
+                <!-- <div class="dice"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
